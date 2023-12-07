@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Name shown on browser tab -->
+        <title>Mountain Train Tours</title>
+
+        <!-- Used for Search Engine Optimization -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <!-- Set View Scale 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Stylesheets -->
+        <!-- <link href="css/destyle.css" rel="stylesheet" /> -->
+        <link href="css/lightbox.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/contact.css" rel="stylesheet" />
+
+        <!-- Favorite Icon -->
+        <link
+            rel="icon"
+            href="favicon/favicon.png"
+            type="image/png"
+            sizes="16x16"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/contact.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="a" class="cmiddle rmiddle">
+                <img src="images/logo.png" />
+            </div>
+
+            <div id="b" class="cmiddle">
+                <h1>Omicron Media Unlimited</h1>
+                <h5>We Create Fantastic Media Events</h5>
+            </div>
+
+            <div id="f" class="cmiddle rmiddle">
+                <a href="index.html" , class="cmiddle rmiddle">Home</a>
+                <a href="about.html" , class="cmiddle rmiddle">About Us</a>
+                <a href="events.html" , class="cmiddle rmiddle">Events</a>
+                <a href="projects.html" , class="cmiddle rmiddle">Projects</a>
+                <a href="reviews.html" , class="cmiddle rmiddle">Reviews</a>
+                <a href="contact.html" , class="cmiddle rmiddle">Contact</a>
+            </div>
+
+            <div id="c">
+                <div id="form-container"></div>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+              
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+              
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+              
+                    <button type="button" onclick="submitForm()">Submit</button>
+                  </form>
+                  </div>
+            </div>
+                
+        </div>
+    </body>
+</html>
