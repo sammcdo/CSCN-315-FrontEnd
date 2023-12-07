@@ -1,0 +1,180 @@
+/*  JavaScript 7th Edition
+    Chapter 11
+    Hands-on Project 11-3
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background: #5472B2;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 0;
+}
+
+
+
+
+
+/*-------------------- Project Styles ------------------*/
+
+section {
+   background-color: #FFDB70;
+   margin-top: 0;
+   padding-bottom: 20px;
+   user-select:none;
+}
+
+section > h1 {
+   font-size: 2em;
+   text-align: center;
+   margin: 0;
+   padding: 20px 0;
+}
+
+img {
+   display: block;
+   margin: 0 auto;
+}
+
+
+label {
+   display: block;
+   width: 200px;
+   float: left;
+   clear: left;
+   margin: 5px 12px 12px 80px;
+   text-align: right;
+}
+
+input {
+   display: block;
+   float: left;
+}
+
+input#viewOrders {
+   display: inline-block;
+   margin-left: 12px;
+}
+
+div#orderResult {
+   border-top: 1px solid gray;
+   width: 600px;
+   margin: 20px auto 0;
+   clear: left;
+}
+
+table#summary {
+   margin-top: 20px;
+   border-collapse: collapse;
+   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+table#summary th {
+   font-weight: bold;
+   text-align: left;
+   width: 200px;
+   padding: 4px 0;
+}
+
+table#summary td {
+   text-align: left;
+   width: 400px;
+   padding: 4px 0;
+}
+
+table.orderList {
+   margin-top: 20px;
+   border-collapse: collapse;
+   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+
+
+table.orderList tr:nth-of-type(1) th:first-of-type {
+   text-align: left;
+   padding: 6px 2px;
+   font-weight: bold;
+}
+
+table.orderList tr:nth-of-type(1) th:last-of-type {
+   text-align: right;
+   padding: 6px 2px;
+   font-weight: bold;
+}
+
+table.orderList tr:nth-of-type(2) {
+   background-color:rgba(152, 151, 231,1.00);
+}
+
+table.orderList tr:nth-of-type(2) th {
+   padding: 8px 8px;
+   font-size: 1.1em;
+   text-align: right;
+}
+
+table.orderList tr:nth-of-type(2) th:first-of-type {
+   text-align: left;
+}
+
+table.orderList tr td {
+   text-align: right;
+   padding: 4px 2px;
+   width: 80px;
+}
+table.orderList tr td:first-of-type {
+   width: 380px;
+   padding: 4px 0;
+   text-align: left;
+}

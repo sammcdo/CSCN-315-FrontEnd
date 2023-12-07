@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 11
+      Hands-on Project 11-3
+
+      Author: Sam McDowell
+      Date:   11/2/2023
+
+      Filename: project11-03.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 11-3</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project11-03.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 11-3
+      </h1>
+   </header>
+
+   <section>
+      <img src="wwlogo.png" alt="Wizard Works" />
+      <h1>View your Order History</h1>
+      <form>
+         <label>User ID</label><input type="text" id="userID" name="userID" autocomplete="off" />
+         <label>Password</label><input type="password" id="pwd" name="pwd" autocomplete="off"/>
+         <input type="button" value="View Orders" id="viewOrders" />
+      </form>
+      
+      <div id="orderResult"></div>
+   </section>
+</body>
+</html>

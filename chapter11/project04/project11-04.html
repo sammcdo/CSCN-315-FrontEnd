@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 11
+      Hands-on Project 11-4
+
+      Author: Sam McDowell
+      Date:   11/2/2023
+
+      Filename: project11-04.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 11-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project11-04.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 11-4
+      </h1>
+   </header>
+
+   <section>
+      <h1>Sun Safety for your Location</h1>
+      
+      <table id="posTable">
+         <caption>Your Current Position</caption>
+         <tr>
+            <th>Latitude</th>
+            <td id="lat"></td>
+         </tr>
+         <tr>
+            <th>Longitude</th>
+            <td id="lng"></td>
+         </tr>         
+      </table>
+      
+      <table id="uvTable">
+         <caption>UV and Ozone Levels</caption>
+         <tr>
+            <th>Current UV Index</th>
+            <td id="uvIndex"></td>
+         </tr>
+         <tr>
+            <th>Maximum UV Index</th>
+            <td id="uvMax"></td>
+         </tr>         
+         <tr>
+            <th>Ozone Level</th>
+            <td id="ozone"></td>
+         </tr>
+      </table>
+      
+      <table id="safeTable">
+         <caption>Safe Exposure Times (mins)</caption>
+         <thead>
+            <tr>
+               <th>Skin Type</th><th>Description</th><th>Burn Time</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th>1</th>
+               <td id="st1desc">
+                  <div id="sample1" class="samples"></div>
+                  Very fair skin, white; red or blond hair; light-colored eyes; freckles likely</td>
+               <td id="st1"></td>
+            </tr> 
+            <tr>
+               <th>2</th>             
+               <td id="st2desc">
+                  <div id="sample2" class="samples"></div>
+                  Fair skin, white; light eyes; light hair</td>
+               <td id="st2"></td>
+            </tr> 
+            <tr>
+               <th>3</th>           
+               <td id="st3desc">
+                  <div id="sample3" class="samples"></div>
+                  Fair skin, cream white; any eye or hair color</td>               
+               <td id="st3"></td>
+            </tr> 
+            <tr>
+               <th>4</th>              
+               <td id="st4desc">
+                  <div id="sample4" class="samples"></div>
+                  Olive skin, typical Mediterranean Caucasian skin; dark brown hair; medium to heavy pigmentation</td>               
+               <td id="st4"></td>
+            </tr>
+            <tr>
+               <th>5</th>           
+               <td id="st5desc">
+                  <div id="sample5" class="samples"></div>
+                  Brown skin, typical Middle Eastern skin; dark hair; rarely sun sensitive</td>   
+               <td id="st5"></td>
+            </tr>
+            <tr>
+               <th>6</th>             
+               <td id="st6desc">
+                  <div id="sample6" class="samples"></div>
+                  Black skin; rarely sun sensitive</td>   
+               <td id="st6"></td>
+            </tr>            
+         </tbody>
+         
+      </table>
+
+
+</section>
+</body>
+</html>
