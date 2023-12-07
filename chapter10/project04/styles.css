@@ -1,0 +1,184 @@
+/*  JavaScript 7th Edition
+    Chapter 10
+    Hands-on Project 10-4
+
+    Chess Board Style sheet
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 1024px;
+   background: #F5F5F5;
+   margin: 0 auto;
+   font-family: Georgia, "Droid Serif", serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background: #5472B2;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 0;
+}
+
+/*-------------------- Project Styles ------------------*/
+
+section {
+   background-color: #FFDB70;
+   margin-top: 0;
+   padding-bottom: 20px;
+   user-select:none;
+   height: 640px;
+}
+
+section h1 {
+   font-size: 2.8em;
+   text-align: center;
+   margin: 0;
+   padding: 20px 0 10px 0;
+}
+
+section p {
+   width: 800px;
+   margin: 0 auto 30px;
+   font-size: 1.2em;
+   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+   line-height: 1.4;
+   left.
+}
+
+table#chessboard {
+   border-collapse: collapse;
+   border: 3px solid gray;
+   margin: 0 0 0 30px;
+   float: left;
+}
+
+table#chessboard td {
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   vertical-align: middle;
+   font-weight: bold;
+}
+
+table#chessboard td.dark {
+   background-color: rgba(163,110,42,0.3);
+   border: 1px solid gray;
+}
+
+table#chessboard td.light {
+   background-color: rgba(233,231,206,1.00);
+   border: 1px solid gray;
+}
+
+table#chessbox {
+   border-collapse: collapse;
+   border: 3px solid gray;
+   margin-left: 20px;
+   float: left;
+   width: 420px;
+}
+
+table#chessbox th, table#chessbox td {
+   border: 2px solid gray;
+   padding: 3px;
+}
+table#chessbox th {
+   font-weight: bold;
+   text-align: left;
+   padding: 5px;
+   vertical-align: top;
+   height: 100px;
+}
+
+table#chessbox tr:first-of-type th {
+   color: black;
+   background-color: white;
+}
+
+table#chessbox tr:last-of-type th {
+   color: white;
+   background-color: black;
+}
+
+table#chessbox tr td {
+   color: black;
+   background-color: white;
+}
+
+span {
+   display: inline-block;
+   font-size: 2.4em;
+   cursor: pointer;
+}

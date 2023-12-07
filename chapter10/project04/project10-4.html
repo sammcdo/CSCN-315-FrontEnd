@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 10
+      Project 10-4
+
+      Chess Board Setup
+      Author: Sam McDowell
+      Date:   10/26/2023
+
+      Filename: project10-4.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 10-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project10-4.js" defer></script>
+ 
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 10-4
+      </h1>
+   </header>
+
+   <section>
+      <h1>Chess Board Setup</h1>
+      <p>Drag and drop pieces from the chess box to set up your board.
+         To capture a piece, move a piece onto an occupied square. To
+         remove a piece from the board, drop it onto its own square.</p>
+ 
+      <table id="chessboard">
+         <tr>
+            <td class="notation col">8</td>
+            <td id="a8" class="light"></td>
+            <td id="b8" class="dark"></td>
+            <td id="c8" class="light"></td>
+            <td id="d8" class="dark"></td>
+            <td id="e8" class="light"></td>
+            <td id="f8" class="dark"></td>
+            <td id="g8" class="light"></td>
+            <td id="h8" class="dark"></td>
+         </tr>
+            <td class="notation col">7</td>
+            <td id="a7" class="dark"></td>
+            <td id="b7" class="light"></td>
+            <td id="c7" class="dark"></td>
+            <td id="d7" class="light"></td>
+            <td id="e7" class="dark"></td>
+            <td id="f7" class="light"></td>
+            <td id="g7" class="dark"></td>
+            <td id="h7" class="light"></td>         
+         </tr>
+         <tr>
+            <td class="notation col">6</td>
+            <td id="a6" class="light"></td>
+            <td id="b6" class="dark"></td>
+            <td id="c6" class="light"></td>
+            <td id="d6" class="dark"></td>
+            <td id="e6" class="light"></td>
+            <td id="f6" class="dark"></td>
+            <td id="g6" class="light"></td>
+            <td id="h6" class="dark"></td>            
+         </tr>
+         <tr>
+            <td class="notation col">5</td>
+            <td id="a5" class="dark"></td>
+            <td id="b5" class="light"></td>
+            <td id="c5" class="dark"></td>
+            <td id="d5" class="light"></td>
+            <td id="e5" class="dark"></td>
+            <td id="f5" class="light"></td>
+            <td id="g5" class="dark"></td>
+            <td id="h5" class="light"></td>
+         </tr>
+         <tr>
+            <td class="notation col">4</td>
+            <td id="a4" class="light"></td>
+            <td id="b4" class="dark"></td>
+            <td id="c4" class="light"></td>
+            <td id="d4" class="dark"></td>
+            <td id="e4" class="light"></td>
+            <td id="f4" class="dark"></td>
+            <td id="g4" class="light"></td>
+            <td id="h4" class="dark"></td>
+         </tr> 
+         <tr>
+            <td class="notation col">3</td>
+            <td id="a3" class="dark"></td>
+            <td id="b3" class="light"></td>
+            <td id="c3" class="dark"></td>
+            <td id="d3" class="light"></td>
+            <td id="e3" class="dark"></td>
+            <td id="f3" class="light"></td>
+            <td id="g3" class="dark"></td>
+            <td id="h3" class="light"></td>
+         </tr>
+         <tr>
+            <td class="notation col">2</td>
+            <td id="a2" class="light"></td>
+            <td id="b2" class="dark"></td>
+            <td id="c2" class="light"></td>
+            <td id="d2" class="dark"></td>
+            <td id="e2" class="light"></td>
+            <td id="f2" class="dark"></td>
+            <td id="g2" class="light"></td>
+            <td id="h2" class="dark"></td>
+         </tr>
+         <tr>
+            <td class="notation col">1</td>
+            <td id="a1" class="dark"></td>
+            <td id="b1" class="light"></td>
+            <td id="c1" class="dark"></td>
+            <td id="d1" class="light"></td>
+            <td id="e1" class="dark"></td>
+            <td id="f1" class="light"></td>
+            <td id="g1" class="dark"></td>
+            <td id="h1" class="light"></td>
+         </tr>
+         <tr>
+            <td class="notation col row"></td>
+            <td class="notation row">a</td>
+            <td class="notation row">b</td>
+            <td class="notation row">c</td>
+            <td class="notation row">d</td>
+            <td class="notation row">e</td>
+            <td class="notation row">f</td>
+            <td class="notation row">g</td>
+            <td class="notation row">h</td>
+         </tr> 
+      </table>
+   
+      <table id="chessbox">
+         <tr>
+            <th>White</th>
+            <td id="whiteBox">
+               <span id="wp1" class="white">&#9812;</span><span id="wp2" class="white">&#9813;</span>
+               <span id="wp3" class="white">&#9814;</span><span id="wp4" class="white">&#9814;</span>
+               <span id="wp5" class="white">&#9815;</span><span id="wp6" class="white">&#9815;</span>
+               <span id="wp7" class="white">&#9816;</span><span id="wp8" class="white">&#9816;</span>
+               <span id="wp9" class="white">&#9817;</span><span id="wp10" class="white">&#9817;</span>
+               <span id="wp11" class="white">&#9817;</span><span id="wp12" class="white">&#9817;</span>
+               <span id="wp13" class="white">&#9817;</span><span id="wp14" class="white">&#9817;</span>
+               <span id="wp15" class="white">&#9817;</span><span id="wp16" class="white">&#9817;</span>
+            </td>
+         </tr>
+         <tr>
+            <th>Black</th>
+            <td id="blackBox">
+               <span id="bp1" class="black">&#9818;</span><span id="bp2" class="black">&#9819;</span>
+               <span id="bp3" class="black">&#9820;</span><span id="bp4" class="black">&#9820;</span>
+               <span id="bp5" class="black">&#9821;</span><span id="bp6" class="black">&#9821;</span>
+               <span id="bp7" class="black">&#9822;</span><span id="bp8" class="black">&#9822;</span>
+               <span id="bp9" class="black">&#9823;</span><span id="bp10" class="black">&#9823;</span>
+               <span id="bp11" class="black">&#9823;</span><span id="bp12" class="black">&#9823;</span>
+               <span id="bp13" class="black">&#9823;</span><span id="bp14" class="black">&#9823;</span>
+               <span id="bp15" class="black">&#9823;</span><span id="bp16" class="black">&#9823;</span>
+            </td>
+         </tr>
+      </table>
+
+   </section>
+
+</body>
+</html>
