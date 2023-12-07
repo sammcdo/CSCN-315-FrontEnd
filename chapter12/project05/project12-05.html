@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 12
+      Project 12-5
+
+      Project to validate a user form
+      Author: Sam McDowell
+      Date:   11/9/2023
+
+      Filename: project12-05.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Hands-on Project 12-5</title>
+   <link rel="stylesheet" href="styles.css" /> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="project12-05.js" defer></script>
+  
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 12-5
+      </h1>
+   </header>
+
+   <section>
+      <form id="userform" name="userform" method="get" action="formsubmit.html">
+         <h1>User Form</h1>
+         
+         <fieldset>
+            <legend>Member Information</legend>
+            
+            <label for="username">Username</label>
+            <input name="username" id="username" required />
+            <span>*</span>
+            
+            <label for="email">Email Address</label>
+            <input name="email" id="email" type="email" required />
+            <span>*</span> 
+            
+            <label for="pwd">Password</label>
+            <input name="pwd" id="pwd" type="password" required />
+            <span>*</span> 
+            
+            <label for="pwd2">Confirm Password</label>
+            <input name="pwd2" id="pwd2" type="password" required />
+            <span>*</span> 
+            <div>Your password must have at least 8 characters <br> with at least 1
+                   uppercase letter, 1 lowercase letter, and 1 number
+            
+            </div>
+         </fieldset>
+         
+         <input id="submitButton" type="submit" value="Submit" />
+      </form>
+   </section>
+</body>
+</html>

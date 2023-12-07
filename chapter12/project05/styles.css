@@ -1,0 +1,158 @@
+/*  JavaScript 7th Edition
+    Chapter 12
+    Hands-on Project 12-5
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+body > header {
+   background: #5472B2;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 0;
+}
+
+
+
+
+
+/*-------------------- Project Styles ------------------*/
+
+section {
+   background-color: #FFDB70;
+   margin-top: 0;
+   padding-top: 20px;
+   padding-bottom: 60px;
+}
+
+form#userform {
+   width: 70%;
+   margin: 0 auto;
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+form > h1 {
+   font-size: 2em;
+   letter-spacing: 0.1em;
+   margin-bottom: 12px;
+}
+
+fieldset {
+   padding: 20px;
+}
+
+label {
+   display: block;
+   float: left;
+   clear: left;
+   font-size: 1.2em;
+   margin: 0 12px 12px 0;
+   width: 160px;
+   text-align: right;
+}
+
+fieldset > input {
+   float: left;
+   font-size: 1em;
+   margin: 0 0 12px 0;
+}
+
+fieldset > span {
+   display: block;
+   color: red;
+   float: left;
+   margin: 0 0 12px 8px;
+}
+
+fieldset > div {
+   float: left;
+}
+
+input#submitButton {
+   display: block;
+   margin: 20px auto;
+   font-size: 1.2em;
+}
+
+section#formoutput {
+   padding: 20px 15%;
+}
+
+section#formoutput > h1 {
+   font-size: 1.4em;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   letter-spacing: 0.1em;
+}
+
+table {
+   border-collapse: collapse;
+   border: 3px outset gray;
+   margin-top: 12px;
+}
+
+table th, table td {
+   padding: 8px 20px 8px 8px;
+   text-align: left;
+   border: 1px solid gray;
+}
+
+table th {
+   background-color: rgb(160, 160, 160);
+   color: ivory;
+}
+
+table td {
+   background-color: ivory;
+   color: gray;
+}

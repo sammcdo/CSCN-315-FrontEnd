@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 12
+      Project 12-5
+
+      Page to display the contents of a valid user form
+      Author: 
+      Date:   
+
+      Filename: formsubmit.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Userform Data</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script>
+      window.addEventListener("load", function(){   
+         // Retrieve the field/value pairs from the URL
+         var formData = location.search.slice(1);
+         formData = formData.replace(/\+/g," ");
+         formData = decodeURIComponent(formData);
+         let formFields = formData.split(/[&=]/g);
+
+         // Write the field values to data table
+         document.getElementById("username").textContent = formFields[1];
+         document.getElementById("email").textContent = formFields[3];
+         document.getElementById("pwd").textContent = formFields[5];
+         document.getElementById("pwd2").textContent = formFields[7];
+
+      } );   
+   </script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 12-5
+      </h1>
+   </header>
+
+   <section id="formoutput">
+         <h1>User Data</h1>
+         
+         <table id="usertable">
+            <tr>
+               <th>Username</th>
+               <td id="username"></td>
+            </tr>
+            <tr>
+               <th>Email</th>
+               <td id="email"></td>
+            </tr> 
+            <tr>
+               <th>Password</th>
+               <td id="pwd"></td>
+            </tr>
+            <tr>
+               <th>Confirm Password</th>
+               <td id="pwd2"></td>
+            </tr>            
+         </table>
+
+   </section>
+</body>
+</html>
